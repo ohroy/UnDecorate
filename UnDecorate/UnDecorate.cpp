@@ -10,13 +10,14 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	TCHAR szUndecorateName[256];
+	WCHAR szUndecorateName[256];
 	memset(szUndecorateName, 0, 256);
 	if (2 == argc)
 	{
 		::UnDecorateSymbolNameW(argv[1], szUndecorateName, 256, 0);
-		std::cout << szUndecorateName << std::endl;
+		std::wcout << szUndecorateName << std::endl;
 	}
+	getchar();
     return 0;
 }
 
