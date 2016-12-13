@@ -17,7 +17,6 @@ int _tmain(int argc, _TCHAR* argv[])
 		::UnDecorateSymbolNameW(argv[1], szUndecorateName, 256, 0);
 		std::wcout << szUndecorateName << std::endl;
 	}
-	getchar();
     return 0;
 }
 
